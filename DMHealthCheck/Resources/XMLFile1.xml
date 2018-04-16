@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><ServiceRequestResponse xmlns="http://www.decisionmetrics.co.uk/xsd"><ServiceRequestResult>OK</ServiceRequestResult>
+<payload_out>
+	<?xml version="1.0" encoding="utf-8"?>
+	<ds_response>
+		<Control>
+			<application_id>50028616</application_id>
+			<client_application_id>CLNT000</client_application_id>
+		</Control>
+		<Decision>
+			<CodedValueBlock>
+				<CV c="GC_D_App_Status" v="REQ3D" t="string" />
+				<CV c="GC_D_Decision" v="PENDING" t="string" />
+				<CV c="GC_D_Next_Action" v="3DANS" t="string" />
+			</CodedValueBlock>
+		</Decision>
+		<PolicyRules>
+			<CodedValueBlock>
+				<CV c="PR_PID_Description01" v="ID Pass - IDE Score" t="string" />
+				<CV c="PR_PID_ReasonCode01" v="IA02" t="string" />
+				<CV c="PR_PID_Priority01" v="2" t="integer" />
+			</CodedValueBlock>
+		</PolicyRules>
+		<DMSB>
+			<DB_Bur_Called_Code>3333</DB_Bur_Called_Code>
+			<DB_Bur_Status_Code>1010</DB_Bur_Status_Code>
+			<DB_Return_Code>100</DB_Return_Code>
+			<DB_Error_Text/>
+			<DB_Bur_History>IDAN00</DB_Bur_History>
+			<CRA_Information>
+				<DB_CCVAL1_Ref_Num>LTJ-CT4-2409-91492-51465-3</DB_CCVAL1_Ref_Num>
+				<DB_CCVAL2_Ref_Num>LTJ-CT3-7887-14925-14655</DB_CCVAL2_Ref_Num>
+			</CRA_Information>
+		</DMSB>
+		<Callvalidate_3d>
+			<Question_1>
+				<Priority>1</Priority>
+				<No_Responses>5</No_Responses>
+				<Question_Text>Which one of the following addresses have you been associated with?</Question_Text>
+				<Responses>
+					<Response_Text_1>FLAT 2, MARILYN COTTAGE, EMMA ROAD</Response_Text_1>
+					<Response_Correct_1>false</Response_Correct_1>
+					<Response_Text_2>56, GRIMWOOD MANOR, TULLY AVENUE</Response_Text_2>
+					<Response_Correct_2>false</Response_Correct_2>
+					<Response_Text_3>FLAT 58, ONEONLY AVENUE</Response_Text_3>
+					<Response_Correct_3>false</Response_Correct_3>
+					<Response_Text_4>THE RANGAS, PATCH SQUARE</Response_Text_4>
+					<Response_Correct_4>false</Response_Correct_4>
+					<Response_Text_5>None of the above</Response_Text_5>
+					<Response_Correct_5>true</Response_Correct_5>
+				</Responses>
+			</Question_1>
+			<Question_2>
+				<Priority>2</Priority>
+				<No_Responses>5</No_Responses>
+				<Question_Text>How long have you had a personal mobile phone contract with your current provider?</Question_Text>
+				<Responses>
+					<Response_Text_1>Less than 1 year ago</Response_Text_1>
+					<Response_Correct_1>false</Response_Correct_1>
+					<Response_Text_2>Between 1 and 3 years ago</Response_Text_2>
+					<Response_Correct_2>false</Response_Correct_2>
+					<Response_Text_3>Between 3 and 5 years ago</Response_Text_3>
+					<Response_Correct_3>false</Response_Correct_3>
+					<Response_Text_4>More than 5 years ago</Response_Text_4>
+					<Response_Correct_4>false</Response_Correct_4>
+					<Response_Text_5>I don't currently have one</Response_Text_5>
+					<Response_Correct_5>true</Response_Correct_5>
+				</Responses>
+			</Question_2>
+			<Question_3>
+				<Priority>4</Priority>
+				<No_Responses>2</No_Responses>
+				<Question_Text>Do you currently have a personal loan (excluding student loans)?</Question_Text>
+				<Responses>
+					<Response_Text_1>Yes</Response_Text_1>
+					<Response_Correct_1>false</Response_Correct_1>
+					<Response_Text_2>No</Response_Text_2>
+					<Response_Correct_2>true</Response_Correct_2>
+				</Responses>
+			</Question_3>
+			<Question_4>
+				<Priority>4</Priority>
+				<No_Responses>2</No_Responses>
+				<Question_Text>Have you taken out a credit card or store card in the last 12 months?</Question_Text>
+				<Responses>
+					<Response_Text_1>Yes</Response_Text_1>
+					<Response_Correct_1>false</Response_Correct_1>
+					<Response_Text_2>No</Response_Text_2>
+					<Response_Correct_2>true</Response_Correct_2>
+				</Responses>
+			</Question_4>
+		</Callvalidate_3d>
+	</ds_response></payload_out></ServiceRequestResponse></soap:Body></soap:Envelope>

@@ -1,0 +1,70 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.decisionmetrics.co.uk/xsd">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <xsd:ServiceRequest>
+         <xsd:name>ATOMUATAPI</xsd:name>
+         <xsd:password>atomuatpwd</xsd:password>
+         <xsd:service>Atom_Savings</xsd:service>
+         <xsd:processflow_id>55750</xsd:processflow_id>
+         <!--Optional:-->
+         <xsd:payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+		 <ds_request xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Atom_request.xsd">
+			<control>
+				<application_id></application_id>
+				<client_application_id>CLNT000</client_application_id>
+				<request_type>NEW</request_type>
+			</control>
+			<strategy>
+				<product>SAVINGS</product>
+			</strategy>
+			<applicant1>
+				<name>
+					<title>Ms</title>
+					<forename>SALLY</forename>
+					<surname>SEAL</surname>
+					<dob>1970-08-01</dob>
+				</name>
+				<current_address>
+					<AddressId>1</AddressId>
+					<AddressDateFrom>1980-01-18</AddressDateFrom>
+				</current_address>
+				<contact_telephone_1>
+					<type></type>
+					<number></number>
+				</contact_telephone_1>
+				<contact_email_1>
+					<type></type>
+					<email></email>
+				</contact_email_1>
+				<bank>
+					<account_number>29250201</account_number>
+					<sort_code>999998</sort_code>
+				</bank>
+			</applicant1>
+			<addresses>
+				<Address1>
+					<AddressId>1</AddressId>
+					<AddressType>1</AddressType>
+					<UKAddress>
+						<abodeno></abodeno>
+						<house_name></house_name>
+						<house_number>24</house_number>
+						<street1>ZOOFIELD GROVE</street1>
+						<street2></street2>
+						<district1></district1>
+						<district2></district2>
+						<posttown>TEST TOWN</posttown>
+						<postcode>X9 9AD</postcode>
+					</UKAddress>
+				</Address1>
+			</addresses>
+			<additionalclient>
+				<applicant_type>APP01</applicant_type>
+				<val_3d_status>FAIL</val_3d_status>				
+				<no_valid_docs>0</no_valid_docs>
+				<sira_product>FIXEDSAV</sira_product>
+			</additionalclient>
+		</ds_request>]]></xsd:payload>
+      </xsd:ServiceRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
